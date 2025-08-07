@@ -1,7 +1,75 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes'?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Main pages -->
   <url>
-    <loc>https://shipany.ai/</loc>
-    <lastmod>2024-12-24T10:00:00+00:00</lastmod>
+    <loc>https://tiktokcommentgenerators.com/</loc>
+    <lastmod>2025-01-07T10:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Language versions -->
+  <url>
+    <loc>https://tiktokcommentgenerators.com/en</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://tiktokcommentgenerators.com/zh"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tiktokcommentgenerators.com/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tiktokcommentgenerators.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tiktokcommentgenerators.com/de"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tiktokcommentgenerators.com/ja"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://tiktokcommentgenerators.com/ko"/>
+    <lastmod>2025-01-07T10:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tiktokcommentgenerators.com/about</loc>
+    <lastmod>2025-01-07T10:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://tiktokcommentgenerators.com/privacy-policy</loc>
+    <lastmod>2025-01-07T10:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://tiktokcommentgenerators.com/terms-of-service</loc>
+    <lastmod>2025-01-07T10:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://tiktokcommentgenerators.com/contact</loc>
+    <lastmod>2025-01-07T10:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://tiktokcommentgenerators.com/faq</loc>
+    <lastmod>2025-01-07T10:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://tiktokcommentgenerators.com/blog</loc>
+    <lastmod>2025-01-07T10:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Static files -->
+  <url>
+    <loc>https://tiktokcommentgenerators.com/ads.txt</loc>
+    <lastmod>2025-01-07T10:00:00+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>

@@ -1,0 +1,170 @@
+{
+  "en": {
+    "title": "TikTok Comment Generator",
+    "subtitle": "Generate Viral TikTok Comments in Seconds",
+    "description": "Create authentic, engaging TikTok comments with our AI-powered TikTok comment generator. Perfect for content creators, marketers, and TikTok enthusiasts.",
+    "videoUrl": "Video URL or Context (optional)",
+    "videoUrlPlaceholder": "Paste TikTok video URL or describe the content",
+    "commentIdea": "Your comment idea",
+    "commentIdeaPlaceholder": "Write what you want to comment about...",
+    "generateButton": "Generate Comments",
+    "bulkGenerateButton": "Bulk Generate",
+    "copyButton": "Copy",
+    "copyAllButton": "Copy All",
+    "regenerateButton": "Regenerate",
+    "likeButton": "Like",
+    "saveButton": "Save",
+    "shareButton": "Share",
+    "exportButton": "Export CSV",
+    "tones": {
+      "funny": "Funny",
+      "support": "Supportive",
+      "trendy": "Trendy",
+      "question": "Question",
+      "compliment": "Compliment",
+      "casual": "Casual"
+    },
+    "features": {
+      "title": "Why Use Our TikTok Comment Generator?",
+      "feature1": "AI-Powered Comments",
+      "feature1Desc": "Generate authentic comments using advanced AI technology",
+      "feature2": "Multiple Tones & Styles",
+      "feature2Desc": "Choose from funny, supportive, trendy, and more comment styles",
+      "feature3": "Instant Generation",
+      "feature3Desc": "Get multiple comment suggestions in seconds",
+      "feature4": "Mobile Optimized",
+      "feature4Desc": "Perfect for creating comments on any device"
+    },
+    "howTo": {
+      "title": "How to Generate TikTok Comments",
+      "step1": "Enter Video Context",
+      "step1Desc": "Paste a TikTok URL or describe the video content",
+      "step2": "Choose Comment Style",
+      "step2Desc": "Select from funny, supportive, trendy, or other tones",
+      "step3": "Generate Comments",
+      "step3Desc": "Click generate to get multiple comment suggestions",
+      "step4": "Copy and Use",
+      "step4Desc": "Copy your favorite comments and use them on TikTok"
+    },
+    "preview": {
+      "title": "Live Preview",
+      "mobileView": "TikTok Mobile View"
+    },
+    "recent": {
+      "title": "Recently Generated Comments",
+      "timeAgo": "ago"
+    },
+    "community": {
+      "title": "Community Favorites",
+      "trending": "Trending Comments"
+    },
+    "seo": {
+      "h1": "Free TikTok Comment Generator - Create Viral Comments Instantly",
+      "h2Benefits": "Benefits of Using TikTok Comment Generator",
+      "h2HowItWorks": "How TikTok Comment Generator Works",
+      "h2Features": "TikTok Comment Generator Features",
+      "h2FAQ": "Frequently Asked Questions",
+      "benefitsList": [
+        "Save time creating engaging TikTok comments",
+        "Boost engagement with AI-powered comment suggestions",
+        "Generate comments in multiple languages and styles",
+        "Perfect for content creators and social media managers",
+        "100% free TikTok comment generator tool"
+      ]
+    }
+  },
+  "zh": {
+    "title": "TikTok评论生成器",
+    "subtitle": "秒速生成爆款TikTok评论",
+    "description": "使用我们的AI驱动的TikTok评论生成器，创建真实、吸引人的TikTok评论。完美适合内容创作者、营销人员和TikTok爱好者。",
+    "videoUrl": "视频URL或内容描述（可选）",
+    "videoUrlPlaceholder": "粘贴TikTok视频URL或描述内容",
+    "commentIdea": "你的评论想法",
+    "commentIdeaPlaceholder": "写下你想评论的内容...",
+    "generateButton": "生成评论",
+    "bulkGenerateButton": "批量生成",
+    "copyButton": "复制",
+    "copyAllButton": "全部复制",
+    "regenerateButton": "重新生成",
+    "likeButton": "喜欢",
+    "saveButton": "保存",
+    "shareButton": "分享",
+    "exportButton": "导出CSV",
+    "tones": {
+      "funny": "搞笑",
+      "support": "支持",
+      "trendy": "潮流",
+      "question": "提问",
+      "compliment": "赞美",
+      "casual": "随意"
+    },
+    "features": {
+      "title": "为什么使用我们的TikTok评论生成器？",
+      "feature1": "AI驱动评论",
+      "feature1Desc": "使用先进的AI技术生成真实评论",
+      "feature2": "多种语气和风格",
+      "feature2Desc": "选择搞笑、支持、潮流等多种评论风格",
+      "feature3": "即时生成",
+      "feature3Desc": "几秒钟内获得多个评论建议",
+      "feature4": "移动端优化",
+      "feature4Desc": "完美适配任何设备上的评论创作"
+    },
+    "howTo": {
+      "title": "如何生成TikTok评论",
+      "step1": "输入视频内容",
+      "step1Desc": "粘贴TikTok URL或描述视频内容",
+      "step2": "选择评论风格",
+      "step2Desc": "从搞笑、支持、潮流或其他语气中选择",
+      "step3": "生成评论",
+      "step3Desc": "点击生成获取多个评论建议",
+      "step4": "复制使用",
+      "step4Desc": "复制你喜欢的评论并在TikTok上使用"
+    },
+    "preview": {
+      "title": "实时预览",
+      "mobileView": "TikTok移动视图"
+    },
+    "recent": {
+      "title": "最近生成的评论",
+      "timeAgo": "前"
+    },
+    "community": {
+      "title": "社区收藏",
+      "trending": "热门评论"
+    },
+    "seo": {
+      "h1": "免费TikTok评论生成器 - 即时创建爆款评论",
+      "h2Benefits": "使用TikTok评论生成器的好处",
+      "h2HowItWorks": "TikTok评论生成器如何工作",
+      "h2Features": "TikTok评论生成器功能",
+      "h2FAQ": "常见问题",
+      "benefitsList": [
+        "节省创建吸引人的TikTok评论的时间",
+        "使用AI驱动的评论建议提升互动",
+        "生成多语言和多风格的评论",
+        "完美适合内容创作者和社交媒体管理者",
+        "100%免费的TikTok评论生成器工具"
+      ]
+    }
+  },
+  "es": {
+    "title": "Generador de Comentarios TikTok",
+    "subtitle": "Genera Comentarios Virales de TikTok en Segundos"
+  },
+  "fr": {
+    "title": "Générateur de Commentaires TikTok",
+    "subtitle": "Générez des Commentaires TikTok Viraux en Secondes"
+  },
+  "de": {
+    "title": "TikTok Kommentar Generator",
+    "subtitle": "Erstellen Sie virale TikTok-Kommentare in Sekunden"
+  },
+  "ja": {
+    "title": "TikTokコメントジェネレーター",
+    "subtitle": "数秒でバイラルなTikTokコメントを生成"
+  },
+  "ko": {
+    "title": "틱톡 댓글 생성기",
+    "subtitle": "몇 초 만에 바이럴 틱톡 댓글 생성"
+  }
+}

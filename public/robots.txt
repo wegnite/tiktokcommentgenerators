@@ -1,4 +1,27 @@
+# TikTok Comment Generator Robots.txt
+# *
 User-agent: *
-Disallow: /*?*q=
-Disallow: /privacy-policy
-Disallow: /terms-of-service
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /static/
+Allow: /privacy-policy
+Allow: /terms-of-service
+
+# Google Bot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing Bot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+# Host
+Host: https://tiktokcommentgenerators.com
+
+# Sitemaps
+Sitemap: https://tiktokcommentgenerators.com/sitemap.xml
+Sitemap: https://tiktokcommentgenerators.com/ads.txt
