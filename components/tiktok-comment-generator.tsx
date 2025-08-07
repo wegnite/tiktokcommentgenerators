@@ -389,96 +389,216 @@ export default function TikTokCommentGenerator() {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="container mx-auto px-4 py-12 border-t">
-        <h2 className="text-3xl font-bold text-center mb-8">
-          Why Use Our TikTok Comment Generator?
-        </h2>
-        
-        <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto">
-          <Card>
-            <CardContent className="pt-6">
-              <Sparkles className="w-10 h-10 text-primary mb-4" />
-              <h3 className="font-semibold mb-2">AI-Powered</h3>
-              <p className="text-sm text-muted-foreground">
-                Advanced AI generates authentic, engaging TikTok comments
-              </p>
-            </CardContent>
-          </Card>
+      {/* Features Section - Redesigned */}
+      <section className="py-20 bg-gradient-to-b from-background via-muted/30 to-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <Badge className="mb-4" variant="outline">
+              <Zap className="w-3 h-3 mr-1" />
+              Core Features
+            </Badge>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Why Choose Our TikTok Comment Generator?
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Experience the power of AI-driven comment generation with features designed for creators
+            </p>
+          </div>
           
-          <Card>
-            <CardContent className="pt-6">
-              <Globe className="w-10 h-10 text-primary mb-4" />
-              <h3 className="font-semibold mb-2">Multi-Language</h3>
-              <p className="text-sm text-muted-foreground">
-                Generate comments in 50+ languages for global reach
-              </p>
-            </CardContent>
-          </Card>
-          
-          <Card>
-            <CardContent className="pt-6">
-              <Zap className="w-10 h-10 text-primary mb-4" />
-              <h3 className="font-semibold mb-2">Instant Results</h3>
-              <p className="text-sm text-muted-foreground">
-                Get multiple comment suggestions in seconds
-              </p>
-            </CardContent>
-          </Card>
-          
-          <Card>
-            <CardContent className="pt-6">
-              <TrendingUp className="w-10 h-10 text-primary mb-4" />
-              <h3 className="font-semibold mb-2">Boost Engagement</h3>
-              <p className="text-sm text-muted-foreground">
-                Increase your TikTok engagement with viral comments
-              </p>
-            </CardContent>
-          </Card>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <div className="group relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-pink-500/10 to-violet-500/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300 opacity-0 group-hover:opacity-100" />
+              <Card className="relative h-full border-muted/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+                <CardContent className="pt-6">
+                  <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-violet-500 rounded-lg flex items-center justify-center mb-4">
+                    <Sparkles className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="font-semibold text-lg mb-2">AI-Powered</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Advanced AI generates authentic, engaging TikTok comments that resonate with your audience
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+            
+            <div className="group relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300 opacity-0 group-hover:opacity-100" />
+              <Card className="relative h-full border-muted/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+                <CardContent className="pt-6">
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mb-4">
+                    <Globe className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="font-semibold text-lg mb-2">Multi-Language</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Generate comments in 50+ languages for global reach and international audience engagement
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+            
+            <div className="group relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/10 to-orange-500/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300 opacity-0 group-hover:opacity-100" />
+              <Card className="relative h-full border-muted/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+                <CardContent className="pt-6">
+                  <div className="w-12 h-12 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-lg flex items-center justify-center mb-4">
+                    <Zap className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="font-semibold text-lg mb-2">Instant Results</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Get multiple comment suggestions in seconds with our lightning-fast generation engine
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+            
+            <div className="group relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-green-500/10 to-emerald-500/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300 opacity-0 group-hover:opacity-100" />
+              <Card className="relative h-full border-muted/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+                <CardContent className="pt-6">
+                  <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-lg flex items-center justify-center mb-4">
+                    <TrendingUp className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="font-semibold text-lg mb-2">Boost Engagement</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Increase your TikTok engagement with viral comments that drive conversations
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* SEO Content Section */}
-      <section className="container mx-auto px-4 py-12">
-        <div className="max-w-4xl mx-auto prose prose-lg">
-          <h2>Free TikTok Comment Generator - Create Engaging Comments Instantly</h2>
+      {/* How It Works Section - Beautiful Design */}
+      <section className="py-20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-pink-500/5 via-transparent to-violet-500/5" />
+        <div className="container mx-auto px-4 relative">
+          <div className="text-center mb-12">
+            <Badge className="mb-4" variant="outline">
+              <MessageCircle className="w-3 h-3 mr-1" />
+              Simple Process
+            </Badge>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              How to Use TikTok Comment Generator
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Create viral comments in just 3 simple steps
+            </p>
+          </div>
           
-          <p>
-            Our <strong>TikTok comment generator</strong> is the ultimate tool for creating viral, 
-            engaging comments that help you stand out on TikTok. Whether you're a content creator, 
-            social media manager, or TikTok enthusiast, our free TikTok comment generator helps 
-            you craft the perfect response every time.
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
+            <div className="relative">
+              <div className="flex items-center justify-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-pink-500 to-rose-500 rounded-2xl flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                  1
+                </div>
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-center">Enter Context</h3>
+              <p className="text-muted-foreground text-center">
+                Paste the TikTok URL or describe the video content you want to comment on
+              </p>
+              {/* Connector Line */}
+              <div className="hidden md:block absolute top-8 left-[60%] w-[80%] h-0.5 bg-gradient-to-r from-pink-500 to-transparent" />
+            </div>
+            
+            <div className="relative">
+              <div className="flex items-center justify-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-violet-500 to-purple-500 rounded-2xl flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                  2
+                </div>
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-center">Choose Style</h3>
+              <p className="text-muted-foreground text-center">
+                Select your preferred comment tone: funny, supportive, trendy, or more
+              </p>
+              {/* Connector Line */}
+              <div className="hidden md:block absolute top-8 left-[60%] w-[80%] h-0.5 bg-gradient-to-r from-violet-500 to-transparent" />
+            </div>
+            
+            <div className="relative">
+              <div className="flex items-center justify-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                  3
+                </div>
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-center">Generate & Copy</h3>
+              <p className="text-muted-foreground text-center">
+                Get instant comment suggestions and copy your favorites with one click
+              </p>
+            </div>
+          </div>
+          
+          {/* Benefits Grid */}
+          <div className="bg-gradient-to-r from-primary/5 via-primary/10 to-primary/5 rounded-3xl p-8 md:p-12">
+            <h3 className="text-2xl font-bold mb-8 text-center">Why Creators Love Our Tool</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-green-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span className="text-green-500 text-lg">✓</span>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-1">Save Hours Daily</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Generate engaging comments instantly instead of spending time thinking
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-green-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span className="text-green-500 text-lg">✓</span>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-1">Increase Visibility</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Stand out with creative comments that get more likes and replies
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-green-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span className="text-green-500 text-lg">✓</span>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-1">100% Free Forever</h4>
+                  <p className="text-sm text-muted-foreground">
+                    No sign-up required, no hidden fees, unlimited comment generation
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-green-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span className="text-green-500 text-lg">✓</span>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-1">Perfect for Creators</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Ideal for content creators, social media managers, and TikTok enthusiasts
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-r from-pink-500/10 via-violet-500/10 to-blue-500/10">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Ready to Create Viral TikTok Comments?
+          </h2>
+          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+            Join 500,000+ creators using our free TikTok comment generator to boost engagement
           </p>
-
-          <h3>How to Use the TikTok Comment Generator</h3>
-          <ol>
-            <li>Enter the TikTok video URL or describe the content</li>
-            <li>Choose your preferred comment tone (funny, supportive, trendy, etc.)</li>
-            <li>Click "Generate Comments" to get instant suggestions</li>
-            <li>Copy your favorite comments and use them on TikTok</li>
-          </ol>
-
-          <h3>Benefits of Using Our TikTok Comment Generator</h3>
-          <ul>
-            <li>Save time creating engaging TikTok comments</li>
-            <li>Increase your visibility and engagement on TikTok</li>
-            <li>Generate comments in multiple languages and styles</li>
-            <li>Perfect for content creators and social media managers</li>
-            <li>100% free TikTok comment generator with no registration required</li>
-          </ul>
-
-          <h3>Features of Our TikTok Comment Generator</h3>
-          <p>
-            Our <strong>TikTok comment generator</strong> uses advanced AI technology to create 
-            authentic, engaging comments that resonate with TikTok users. With multiple tone options, 
-            language support, and instant generation, you'll never run out of creative comment ideas.
-          </p>
-
-          <h3>Why Choose Our TikTok Comment Generator?</h3>
-          <p>
-            Unlike other TikTok comment generators, our tool is completely free, requires no sign-up, 
-            and generates multiple comment variations instantly. Whether you need funny TikTok comments, 
-            supportive messages, or trendy responses, our TikTok comment generator has you covered.
+          <Button size="lg" className="text-lg px-8">
+            <Sparkles className="w-5 h-5 mr-2" />
+            Start Generating Comments
+          </Button>
+          <p className="text-sm text-muted-foreground mt-4">
+            No sign-up required • 100% Free • Instant results
           </p>
         </div>
       </section>

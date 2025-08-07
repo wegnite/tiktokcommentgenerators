@@ -22,15 +22,14 @@ export async function generateMetadata({
 }: {
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
-  const { locale } = await params;
-  const t = await getTranslations();
+  // Removed unused variables to fix TypeScript warnings
 
   return {
     title: {
-      template: `%s | TikTok Comment Generator`,
-      default: "TikTok Comment Generator - Create Viral Comments Instantly",
+      template: `%s | TikTok Comments`,
+      default: "TikTok Comment Generator - Free AI Tool",
     },
-    description: "Free TikTok comment generator to create viral, engaging comments instantly. Generate funny, trendy, and authentic TikTok comments with AI. No sign-up required!",
+    description: "Create viral TikTok comments instantly with our free AI-powered generator. Join 500K+ creators using our tool. No sign-up required!",
     keywords: "tiktok comment generator, tiktok comments generator, tiktok comment reply generator, viral tiktok comments, funny tiktok comments, tiktok engagement tool, free comment generator, AI comment generator",
     openGraph: {
       title: "TikTok Comment Generator - Create Viral Comments Instantly",

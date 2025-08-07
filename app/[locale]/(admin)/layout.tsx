@@ -22,10 +22,10 @@ export default async function AdminLayout({
 
   const sidebar: Sidebar = {
     brand: {
-      title: "ShipAny",
+      title: "TikTok Admin",
       logo: {
         src: "/logo.png",
-        alt: "ShipAny",
+        alt: "TikTok Admin",
       },
       url: "/admin",
     },
@@ -67,19 +67,19 @@ export default async function AdminLayout({
       items: [
         {
           title: "Documents",
-          url: "https://docs.shipany.ai",
+          url: "https://docs.tiktokcommentgenerators.com",
           target: "_blank",
           icon: "RiFileTextLine",
         },
         {
           title: "Blocks",
-          url: "https://shipany.ai/blocks",
+          url: "/tools",
           target: "_blank",
           icon: "RiDashboardLine",
         },
         {
           title: "Showcases",
-          url: "https://shipany.ai/showcase",
+          url: "/showcase",
           target: "_blank",
           icon: "RiAppsLine",
         },
@@ -95,19 +95,19 @@ export default async function AdminLayout({
         },
         {
           title: "Github",
-          url: "https://github.com/shipanyai/shipany-template-one",
+          url: "https://github.com/tiktokcomments",
           target: "_blank",
           icon: "RiGithubLine",
         },
         {
           title: "Discord",
-          url: "https://discord.gg/HQNnrzjZQS",
+          url: "https://discord.gg/tiktokcomments",
           target: "_blank",
           icon: "RiDiscordLine",
         },
         {
           title: "X",
-          url: "https://x.com/shipanyai",
+          url: "https://x.com/tiktokcomments",
           target: "_blank",
           icon: "RiTwitterLine",
         },
