@@ -1,7 +1,8 @@
 import { getTranslations } from 'next-intl/server';
 import { Metadata } from 'next';
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
   return {
     title: 'TikTok Username Generator - Create Unique Usernames',
     description: 'Generate creative and unique TikTok usernames instantly. Find the perfect username for your TikTok profile.',

@@ -1,7 +1,8 @@
 import { getTranslations } from 'next-intl/server';
 import { Metadata } from 'next';
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
   return {
     title: 'Affiliate Program - Earn with TikTok Comment Generator',
     description: 'Join our affiliate program and earn commissions by promoting TikTok Comment Generator.',

@@ -1,7 +1,8 @@
 import { getTranslations } from 'next-intl/server';
 import { Metadata } from 'next';
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
   return {
     title: 'TikTok Reply Generator - Create Engaging Replies Instantly',
     description: 'Generate perfect replies for TikTok comments. AI-powered tool to create witty, supportive, and engaging responses.',
