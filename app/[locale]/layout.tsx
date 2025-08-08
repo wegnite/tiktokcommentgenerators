@@ -31,6 +31,20 @@ export async function generateMetadata({
     },
     description: "Create viral TikTok comments instantly with our free AI-powered generator. Join 500K+ creators using our tool. No sign-up required!",
     keywords: "tiktok comment generator, tiktok comments generator, tiktok comment reply generator, viral tiktok comments, funny tiktok comments, tiktok engagement tool, free comment generator, AI comment generator",
+    icons: {
+      icon: [
+        { url: '/favicon.ico' },
+        { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+        { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      ],
+      apple: [
+        { url: '/apple-touch-icon.png', sizes: '180x180' },
+      ],
+      other: [
+        { rel: 'mask-icon', url: '/favicon.svg', color: '#FF0050' },
+      ],
+    },
+    manifest: '/site.webmanifest',
     openGraph: {
       title: "TikTok Comment Generator - Create Viral Comments Instantly",
       description: "Generate engaging TikTok comments with our free AI-powered tool. Create funny, trendy, and authentic comments that boost engagement.",
@@ -101,10 +115,15 @@ export default async function RootLayout({
         <meta name="author" content="TikTok Comment Generators" />
         <meta name="robots" content="index, follow" />
         
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/favicon.svg" color="#FF0050" />
+        <meta name="msapplication-TileColor" content="#FF0050" />
+        <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+        <meta name="theme-color" content="#FF0050" />
         <link rel="canonical" href={`${webUrl}/${locale === "en" ? "" : locale}`} />
 
         {locales &&

@@ -54,7 +54,7 @@
           "Email support",
           "No ads"
         ],
-        "interval": "monthly",
+        "interval": "month",
         "amount": 999,
         "cn_amount": 6999,
         "currency": "USD",
@@ -68,7 +68,7 @@
           "url": "/pricing/pro",
           "icon": "RiFlashlightFill"
         },
-        "product_id": "pro",
+        "product_id": "prod_4714mbpgKtkHSFJ6JgkZJw",
         "product_name": "TikTok Comment Generator Pro",
         "credits": 1000,
         "valid_months": 1
@@ -87,7 +87,7 @@
           "Custom branding",
           "99.9% uptime SLA"
         ],
-        "interval": "monthly",
+        "interval": "month",
         "amount": 4999,
         "cn_amount": 34999,
         "currency": "USD",

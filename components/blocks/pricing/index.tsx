@@ -23,8 +23,11 @@ export default function Pricing({ pricing }: { pricing: PricingType }) {
   const [group, setGroup] = useState(pricing.groups?.[0]?.name);
   const [isLoading, setIsLoading] = useState(false);
   const [productId, setProductId] = useState<string | null>(null);
+  const [paymentGateway, setPaymentGateway] = useState<'stripe' | 'creem' | null>(null);
+  
+  const isCreemEnabled = process.env.NEXT_PUBLIC_CREEM_ENABLED === 'true';
 
-  const handleCheckout = async (item: PricingItem, cn_pay: boolean = false) => {
+  const handleCheckout = async (item: PricingItem, cn_pay: boolean = false, useCreem: boolean = false) => {
     try {
       if (!user) {
         setShowSignModal(true);
@@ -43,8 +46,12 @@ export default function Pricing({ pricing }: { pricing: PricingType }) {
 
       setIsLoading(true);
       setProductId(item.product_id);
+      setPaymentGateway(useCreem ? 'creem' : 'stripe');
 
-      const response = await fetch("/api/checkout", {
+      // Choose the appropriate checkout endpoint
+      const checkoutUrl = useCreem ? "/api/checkout-creem" : "/api/checkout";
+      
+      const response = await fetch(checkoutUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -66,20 +73,27 @@ export default function Pricing({ pricing }: { pricing: PricingType }) {
         return;
       }
 
-      const { public_key, session_id } = data;
+      if (useCreem) {
+        // For Creem, redirect to the payment URL directly
+        const { payment_url } = data;
+        window.location.href = payment_url;
+      } else {
+        // For Stripe, use the Stripe SDK
+        const { public_key, session_id } = data;
 
-      const stripe = await loadStripe(public_key);
-      if (!stripe) {
-        toast.error("checkout failed");
-        return;
-      }
+        const stripe = await loadStripe(public_key);
+        if (!stripe) {
+          toast.error("checkout failed");
+          return;
+        }
 
-      const result = await stripe.redirectToCheckout({
-        sessionId: session_id,
-      });
+        const result = await stripe.redirectToCheckout({
+          sessionId: session_id,
+        });
 
-      if (result.error) {
-        toast.error(result.error.message);
+        if (result.error) {
+          toast.error(result.error.message);
+        }
       }
     } catch (e) {
       console.log("checkout failed: ", e);
@@ -88,6 +102,7 @@ export default function Pricing({ pricing }: { pricing: PricingType }) {
     } finally {
       setIsLoading(false);
       setProductId(null);
+      setPaymentGateway(null);
     }
   };
 
@@ -252,31 +267,58 @@ export default function Pricing({ pricing }: { pricing: PricingType }) {
                         </div>
                       ) : null}
                       {item.button && (
-                        <Button
-                          className="w-full flex items-center justify-center gap-2 font-semibold"
-                          disabled={isLoading}
-                          onClick={() => {
-                            if (isLoading) {
-                              return;
-                            }
-                            handleCheckout(item);
-                          }}
-                        >
-                          {(!isLoading ||
-                            (isLoading && productId !== item.product_id)) && (
-                            <p>{item.button.title}</p>
-                          )}
+                        <>
+                          <Button
+                            className="w-full flex items-center justify-center gap-2 font-semibold"
+                            disabled={isLoading}
+                            onClick={() => {
+                              if (isLoading) {
+                                return;
+                              }
+                              handleCheckout(item, false, false);
+                            }}
+                          >
+                            {(!isLoading ||
+                              (isLoading && (productId !== item.product_id || paymentGateway !== 'stripe'))) && (
+                              <p>{item.button.title}</p>
+                            )}
 
-                          {isLoading && productId === item.product_id && (
-                            <p>{item.button.title}</p>
+                            {isLoading && productId === item.product_id && paymentGateway === 'stripe' && (
+                              <p>{item.button.title}</p>
+                            )}
+                            {isLoading && productId === item.product_id && paymentGateway === 'stripe' && (
+                              <Loader className="mr-2 h-4 w-4 animate-spin" />
+                            )}
+                            {item.button.icon && (
+                              <Icon name={item.button.icon} className="size-4" />
+                            )}
+                          </Button>
+                          {isCreemEnabled && (
+                            <Button
+                              className="w-full flex items-center justify-center gap-2 font-semibold"
+                              variant="secondary"
+                              disabled={isLoading}
+                              onClick={() => {
+                                if (isLoading) {
+                                  return;
+                                }
+                                handleCheckout(item, false, true);
+                              }}
+                            >
+                              {(!isLoading ||
+                                (isLoading && (productId !== item.product_id || paymentGateway !== 'creem'))) && (
+                                <p>Pay with Creem</p>
+                              )}
+
+                              {isLoading && productId === item.product_id && paymentGateway === 'creem' && (
+                                <p>Pay with Creem</p>
+                              )}
+                              {isLoading && productId === item.product_id && paymentGateway === 'creem' && (
+                                <Loader className="mr-2 h-4 w-4 animate-spin" />
+                              )}
+                            </Button>
                           )}
-                          {isLoading && productId === item.product_id && (
-                            <Loader className="mr-2 h-4 w-4 animate-spin" />
-                          )}
-                          {item.button.icon && (
-                            <Icon name={item.button.icon} className="size-4" />
-                          )}
-                        </Button>
+                        </>
                       )}
                       {item.tip && (
                         <p className="text-muted-foreground text-sm mt-2">

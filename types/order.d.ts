@@ -1,3 +1,5 @@
+export type PaymentGateway = 'stripe' | 'creem';
+
 export interface Order {
   order_no: string;
   created_at: string;
@@ -7,7 +9,10 @@ export interface Order {
   interval: string;
   expired_at: string;
   status: string;
+  payment_gateway?: PaymentGateway;
   stripe_session_id?: string;
+  creem_payment_id?: string;
+  creem_customer_id?: string;
   credits: number;
   currency: string;
   sub_id?: string;

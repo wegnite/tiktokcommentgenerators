@@ -35,6 +35,23 @@ export async function findOrderByOrderNo(
   return data;
 }
 
+export async function findOrderByCreemPaymentId(
+  creem_payment_id: string
+): Promise<Order | undefined> {
+  const supabase = getSupabaseClient();
+  const { data, error } = await supabase
+    .from("orders")
+    .select("*")
+    .eq("creem_payment_id", creem_payment_id)
+    .single();
+
+  if (error) {
+    return undefined;
+  }
+
+  return data;
+}
+
 export async function getFirstPaidOrderByUserUuid(
   user_uuid: string
 ): Promise<Order | undefined> {
@@ -104,6 +121,25 @@ export async function updateOrderSession(
   const { data, error } = await supabase
     .from("orders")
     .update({ stripe_session_id, order_detail })
+    .eq("order_no", order_no);
+
+  if (error) {
+    throw error;
+  }
+
+  return data;
+}
+
+export async function updateOrderCreemSession(
+  order_no: string,
+  creem_payment_id: string,
+  creem_customer_id: string,
+  order_detail: string
+) {
+  const supabase = getSupabaseClient();
+  const { data, error } = await supabase
+    .from("orders")
+    .update({ creem_payment_id, creem_customer_id, order_detail })
     .eq("order_no", order_no);
 
   if (error) {

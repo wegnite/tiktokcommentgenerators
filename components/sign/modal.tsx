@@ -28,6 +28,12 @@ import { signIn } from "next-auth/react";
 import { useAppContext } from "@/contexts/app";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 import { useTranslations } from "next-intl";
+import dynamic from "next/dynamic";
+
+// 动态导入测试登录组件，仅在开发环境加载
+const TestLogin = dynamic(() => import("./test-login"), {
+  ssr: false,
+});
 
 export default function SignModal() {
   const t = useTranslations();
@@ -115,6 +121,9 @@ function ProfileForm({ className }: React.ComponentProps<"form">) {
           {t("sign_modal.github_sign_in")}
         </Button>
       )}
+      
+      {/* 测试登录按钮 - 仅在开发环境显示 */}
+      {process.env.NODE_ENV === "development" && <TestLogin />}
     </div>
   );
 }
