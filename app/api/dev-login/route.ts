@@ -6,7 +6,7 @@ import { sign } from "jsonwebtoken";
 export async function POST(req: Request) {
   // 仅在开发环境允许
   if (process.env.NODE_ENV !== "development") {
-    return respErr("Not available in production", 403);
+    return respErr("Not available in production");
   }
 
   try {
@@ -33,7 +33,7 @@ export async function POST(req: Request) {
     const cookieStore = await cookies();
     cookieStore.set("test-auth-token", token, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
+      secure: false, // 开发环境不需要 HTTPS
       sameSite: "lax",
       maxAge: 60 * 60 * 24, // 24 hours
       path: "/",
