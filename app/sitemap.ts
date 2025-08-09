@@ -1,7 +1,8 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_WEB_URL || 'https://tiktokcommentgenerators.com';
+  // Always use production URL for sitemap
+  const baseUrl = 'https://tiktokcommentgenerators.com';
   
   return [
     // Main pages
