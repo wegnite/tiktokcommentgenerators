@@ -2,7 +2,7 @@ import { TableColumn } from "@/types/blocks/table";
 import TableSlot from "@/components/dashboard/slots/table";
 import { Table as TableSlotType } from "@/types/slots/table";
 import { getPaiedOrders } from "@/models/order";
-import moment from "moment";
+import { formatDateTime } from "@/lib/date";
 
 export default async function () {
   const orders = await getPaiedOrders(1, 50);
@@ -15,7 +15,7 @@ export default async function () {
     {
       name: "created_at",
       title: "Created At",
-      callback: (row) => moment(row.created_at).format("YYYY-MM-DD HH:mm:ss"),
+      callback: (row) => formatDateTime(row.created_at),
     },
   ];
 

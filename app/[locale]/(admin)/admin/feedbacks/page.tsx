@@ -2,9 +2,9 @@ import { TableColumn } from "@/types/blocks/table";
 import TableSlot from "@/components/dashboard/slots/table";
 import { Table as TableSlotType } from "@/types/slots/table";
 import { getFeedbacks } from "@/models/feedback";
-import moment from "moment";
+import { formatDateTime } from "@/lib/date";
 
-export const runtime = "edge";
+export const runtime = "nodejs";
 
 export default async function () {
   const feedbacks = await getFeedbacks(1, 50);
@@ -42,7 +42,7 @@ export default async function () {
     {
       name: "created_at",
       title: "Created At",
-      callback: (row) => moment(row.created_at).format("YYYY-MM-DD HH:mm:ss"),
+      callback: (row) => formatDateTime(row.created_at),
     },
     {
       name: "actions",
