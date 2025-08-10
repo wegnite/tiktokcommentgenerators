@@ -53,9 +53,9 @@ export async function generateMetadata({
       type: "website",
       images: [
         {
-          url: "https://tiktokcommentgenerators.com/og-image.png",
-          width: 1200,
-          height: 630,
+          url: "https://tiktokcommentgenerators.com/favicon.svg",
+          width: 512,
+          height: 512,
           alt: "TikTok Comment Generator",
         },
       ],
