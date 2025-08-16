@@ -1,7 +1,7 @@
 # TikTok Comment Generator - AI-Powered Engagement Tool for Creators
 
 ## 🚀 One-Line Pitch
-AI-powered tool that generates authentic, engaging TikTok comments in seconds, helping 500,000+ creators save time and boost engagement.
+AI-powered tool that generates authentic, engaging TikTok comments in seconds, helping creators save time and boost engagement.
 
 ## 🎯 The Problem
 Content creators spend 2-3 hours daily writing comments to maintain engagement, leading to burnout and reduced content creation time.
@@ -23,10 +23,10 @@ TikTok Comment Generator uses advanced AI to instantly create contextually relev
 - **100% Free**: No signup required
 - **Context-Aware**: Analyzes content for relevance
 
-## 📊 Traction
-- 500,000+ active users
-- 10M+ comments generated
-- 99.9% uptime
+## 📊 Key Benefits
+- 100% Free Forever
+- No signup required
+- Instant generation
 - Users save 15+ hours weekly
 
 ## 🎯 Why We're Different

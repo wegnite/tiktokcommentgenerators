@@ -181,7 +181,7 @@ export default function FeaturesPage() {
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
             Everything you need to create engaging TikTok comments that drive real engagement. 
-            Discover why over 500,000 creators choose our TikTok comment generator.
+            Discover why creators choose our free TikTok comment generator.
           </p>
           <div className="flex gap-4 justify-center">
             <Button size="lg" className="gap-2">
@@ -200,14 +200,14 @@ export default function FeaturesPage() {
         <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto">
           <Card>
             <CardContent className="pt-6 text-center">
-              <div className="text-3xl font-bold text-primary">10M+</div>
-              <div className="text-sm text-muted-foreground">Comments Generated</div>
+              <div className="text-3xl font-bold text-primary">Free</div>
+              <div className="text-sm text-muted-foreground">Forever</div>
             </CardContent>
           </Card>
           <Card>
             <CardContent className="pt-6 text-center">
-              <div className="text-3xl font-bold text-primary">500K+</div>
-              <div className="text-sm text-muted-foreground">Active Users</div>
+              <div className="text-3xl font-bold text-primary">Instant</div>
+              <div className="text-sm text-muted-foreground">Results</div>
             </CardContent>
           </Card>
           <Card>
@@ -317,7 +317,7 @@ export default function FeaturesPage() {
           Ready to Boost Your TikTok Engagement?
         </h2>
         <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-          Join over 500,000 creators using our free TikTok comment generator to create 
+          Start using our free TikTok comment generator to create 
           viral, engaging comments that get noticed.
         </p>
         <div className="flex gap-4 justify-center">

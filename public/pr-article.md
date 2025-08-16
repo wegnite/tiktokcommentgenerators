@@ -122,7 +122,7 @@ We believe in:
 - **Privacy**: No data storage, no tracking
 - **Accessibility**: Free tools for all creators
 
-## Join 500,000+ Creators Already Using Our Tool
+## Start Using Our Free Tool Today
 
 Whether you're:
 - A new creator trying to grow your first 1,000 followers

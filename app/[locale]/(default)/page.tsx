@@ -15,14 +15,14 @@ export async function generateMetadata({
 
   return {
     title: "TikTok Comment Generator - Create Viral Comments",
-    description: "Free AI-powered TikTok comment generator. Create viral, funny, and engaging comments instantly. Used by 500K+ creators. No sign-up required!",
+    description: "Free AI-powered TikTok comment generator. Create viral, funny, and engaging comments instantly. No sign-up required!",
     keywords: "tiktok comment generator, tiktok comments generator, tiktok comment reply generator, viral tiktok comments, funny tiktok comments, tiktok engagement tool, tokcomment, tok comment generator, free comment generator",
     alternates: {
       canonical: canonicalUrl,
     },
     openGraph: {
       title: "TikTok Comment Generator - Create Viral Comments Instantly",
-      description: "Free TikTok comment generator to create engaging, viral comments. Generate funny, supportive, trendy comments with AI. 10M+ comments generated!",
+      description: "Free TikTok comment generator to create engaging, viral comments. Generate funny, supportive, trendy comments with AI instantly!",
       type: "website",
       locale: locale,
       url: canonicalUrl,
@@ -237,7 +237,7 @@ export default async function HomePage({
           <div className="bg-gradient-to-r from-primary/5 via-primary/10 to-primary/5 rounded-3xl p-8 md:p-12">
             <div className="text-center">
               <p className="text-lg md:text-xl font-medium mb-2">
-                Join over <span className="font-bold text-primary">500,000 TikTok creators</span> using our free TikTok comment generator
+                Start using our <span className="font-bold text-primary">free TikTok comment generator</span> today
               </p>
               <p className="text-muted-foreground">
                 Boost engagement and grow your following with AI-powered comments that resonate
@@ -245,20 +245,20 @@ export default async function HomePage({
               
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
                 <div>
-                  <div className="text-2xl md:text-3xl font-bold text-primary">10M+</div>
-                  <div className="text-sm text-muted-foreground">Comments Generated</div>
+                  <div className="text-2xl md:text-3xl font-bold text-primary">Free</div>
+                  <div className="text-sm text-muted-foreground">No Sign-up Required</div>
                 </div>
                 <div>
-                  <div className="text-2xl md:text-3xl font-bold text-primary">500K+</div>
-                  <div className="text-sm text-muted-foreground">Active Users</div>
+                  <div className="text-2xl md:text-3xl font-bold text-primary">Instant</div>
+                  <div className="text-sm text-muted-foreground">Generate in Seconds</div>
                 </div>
                 <div>
-                  <div className="text-2xl md:text-3xl font-bold text-primary">99.9%</div>
-                  <div className="text-sm text-muted-foreground">Uptime</div>
+                  <div className="text-2xl md:text-3xl font-bold text-primary">AI-Powered</div>
+                  <div className="text-sm text-muted-foreground">Smart Generation</div>
                 </div>
                 <div>
-                  <div className="text-2xl md:text-3xl font-bold text-primary">50+</div>
-                  <div className="text-sm text-muted-foreground">Languages</div>
+                  <div className="text-2xl md:text-3xl font-bold text-primary">Multiple</div>
+                  <div className="text-sm text-muted-foreground">Comment Styles</div>
                 </div>
               </div>
             </div>

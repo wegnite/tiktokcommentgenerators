@@ -285,12 +285,12 @@ export default function TikTokCommentGenerator() {
         {/* Stats */}
         <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto mb-12">
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary">10M+</div>
-            <div className="text-sm text-muted-foreground">Comments Generated</div>
+            <div className="text-3xl font-bold text-primary">Free</div>
+            <div className="text-sm text-muted-foreground">No Sign-up</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary">500K+</div>
-            <div className="text-sm text-muted-foreground">Happy Users</div>
+            <div className="text-3xl font-bold text-primary">Instant</div>
+            <div className="text-sm text-muted-foreground">Generation</div>
           </div>
           <div className="text-center">
             <div className="text-3xl font-bold text-primary">50+</div>
@@ -909,7 +909,7 @@ export default function TikTokCommentGenerator() {
             Ready to Create Viral TikTok Comments?
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Join 500,000+ creators using our free TikTok comment generator to boost engagement
+            Start using our free TikTok comment generator to boost engagement
           </p>
           <Button size="lg" className="text-lg px-8" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <Sparkles className="w-5 h-5 mr-2" />

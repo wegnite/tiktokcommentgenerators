@@ -83,8 +83,8 @@ Generate authentic comments in 50+ languages, perfect for global engagement.
 ✅ **Constant Updates**: Based on user feedback  
 
 ## 📊 By The Numbers
-- 500,000+ active users
-- 10M+ comments generated
+- Growing community of creators
+- Powerful AI technology
 - 50+ languages supported
 - 99.9% uptime
 - 5-star average rating

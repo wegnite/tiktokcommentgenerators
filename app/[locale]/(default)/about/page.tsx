@@ -15,7 +15,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "About TikTok Comment Generator - Our Mission & Story",
-  description: "Learn about TikTok Comment Generator, the leading AI-powered tool helping millions create engaging TikTok comments. Our mission is to empower creators worldwide.",
+  description: "Learn about TikTok Comment Generator, the leading AI-powered tool helping creators create engaging TikTok comments. Our mission is to empower creators worldwide.",
   keywords: "about tiktok comment generator, tiktok tools, social media tools, ai comment generator",
 };
 
@@ -83,14 +83,14 @@ export default function AboutPage() {
         <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto">
           <Card>
             <CardContent className="pt-6 text-center">
-              <div className="text-3xl font-bold text-primary mb-2">10M+</div>
-              <div className="text-sm text-muted-foreground">Comments Generated</div>
+              <div className="text-3xl font-bold text-primary mb-2">Free</div>
+              <div className="text-sm text-muted-foreground">No Sign-up Required</div>
             </CardContent>
           </Card>
           <Card>
             <CardContent className="pt-6 text-center">
-              <div className="text-3xl font-bold text-primary mb-2">500K+</div>
-              <div className="text-sm text-muted-foreground">Active Users</div>
+              <div className="text-3xl font-bold text-primary mb-2">Instant</div>
+              <div className="text-sm text-muted-foreground">Fast Generation</div>
             </CardContent>
           </Card>
           <Card>
@@ -198,7 +198,7 @@ export default function AboutPage() {
               <p>
                 Founded in 2023, we started with a simple goal: make it easier for people to 
                 engage authentically on TikTok. What began as a small project has grown into 
-                a tool used by over 500,000 creators worldwide, generating millions of comments 
+                a powerful free tool helping creators worldwide generate authentic comments 
                 that have sparked conversations, built communities, and helped creators grow.
               </p>
               
@@ -223,7 +223,7 @@ export default function AboutPage() {
       <section className="container mx-auto px-4 py-16 text-center">
         <h2 className="text-3xl font-bold mb-4">Ready to Boost Your TikTok Engagement?</h2>
         <p className="text-xl text-muted-foreground mb-8">
-          Join millions of creators using our free TikTok comment generator
+          Start using our free TikTok comment generator today
         </p>
         <Link 
           href="/" 

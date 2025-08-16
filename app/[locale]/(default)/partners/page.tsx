@@ -89,8 +89,8 @@ export default async function PartnersPage() {
           <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center">
               <div className="text-3xl mb-2">📈</div>
-              <h3 className="font-semibold mb-1">500K+ Users</h3>
-              <p className="text-sm">Growing community of creators</p>
+              <h3 className="font-semibold mb-1">Growing Fast</h3>
+              <p className="text-sm">Join our community of creators</p>
             </div>
             <div className="text-center">
               <div className="text-3xl mb-2">🌍</div>

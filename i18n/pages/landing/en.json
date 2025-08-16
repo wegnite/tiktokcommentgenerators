@@ -15,7 +15,7 @@
       "highlight": "Viral"
     },
     "subheading": "Create engaging, authentic TikTok comments instantly with our AI-powered generator",
-    "description": "Join 500,000+ creators using our free tool to boost engagement and save time on TikTok",
+    "description": "Use our free AI-powered tool to create engaging TikTok comments and boost your engagement",
     "buttons": [
       {
         "title": "Start Generating Free",
@@ -40,20 +40,20 @@
     "title": "Trusted by Creators Worldwide",
     "items": [
       {
-        "value": "10M+",
-        "label": "Comments Generated"
+        "value": "Free",
+        "label": "No Sign-up Required"
       },
       {
-        "value": "500K+",
-        "label": "Active Users"
+        "value": "Instant",
+        "label": "Generate in Seconds"
       },
       {
-        "value": "50+",
-        "label": "Languages Supported"
+        "value": "AI-Powered",
+        "label": "Smart Technology"
       },
       {
-        "value": "99.9%",
-        "label": "Uptime"
+        "value": "Multiple",
+        "label": "Comment Styles"
       }
     ]
   },
@@ -248,7 +248,7 @@
     "name": "cta",
     "label": "CTA",
     "title": "Ready to Boost Your TikTok Engagement?",
-    "description": "Join 500,000+ creators using our free comment generator",
+    "description": "Start using our free comment generator today",
     "buttons": [
       {
         "title": "Start Free Now",
@@ -260,7 +260,7 @@
   "footer": {
     "brand": {
       "title": "TikTok Comment Generator",
-      "description": "The #1 free tool for creating viral TikTok comments instantly.",
+      "description": "Free AI-powered tool for creating viral TikTok comments instantly.",
       "logo": {
         "src": "/logo.png",
         "alt": "TikTok Comment Generator"
@@ -278,11 +278,11 @@
           ]
         },
         {
-          "title": "Company",
+          "title": "Support",
           "children": [
-            {"title": "About", "url": "/about"},
-            {"title": "Blog", "url": "/blog"},
-            {"title": "Contact", "url": "/contact"}
+            {"title": "Contact Us", "url": "mailto:support@tiktokcommentgenerators.com"},
+            {"title": "FAQ", "url": "/faq"},
+            {"title": "Help Center", "url": "/help"}
           ]
         },
         {

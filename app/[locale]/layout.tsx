@@ -29,7 +29,7 @@ export async function generateMetadata({
       template: `%s | TikTok Comments`,
       default: "TikTok Comment Generator - Free AI Tool",
     },
-    description: "Create viral TikTok comments instantly with our free AI-powered generator. Join 500K+ creators using our tool. No sign-up required!",
+    description: "Create viral TikTok comments instantly with our free AI-powered generator. No sign-up required!",
     keywords: "tiktok comment generator, tiktok comments generator, tiktok comment reply generator, viral tiktok comments, funny tiktok comments, tiktok engagement tool, free comment generator, AI comment generator",
     icons: {
       icon: [
@@ -188,15 +188,22 @@ export default async function RootLayout({
               "description": "Free AI-powered TikTok comment generator to create viral, engaging comments instantly",
               "applicationCategory": "SocialNetworkingApplication",
               "operatingSystem": "Any",
+              "logo": "https://tiktokcommentgenerators.com/favicon.svg",
+              "image": "https://tiktokcommentgenerators.com/favicon.svg",
               "offers": {
                 "@type": "Offer",
                 "price": "0",
                 "priceCurrency": "USD"
               },
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.8",
-                "ratingCount": "10234"
+              "publisher": {
+                "@type": "Organization",
+                "name": "TikTok Comment Generators",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://tiktokcommentgenerators.com/favicon.svg",
+                  "width": 512,
+                  "height": 512
+                }
               }
             }),
           }}

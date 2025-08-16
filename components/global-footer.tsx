@@ -79,8 +79,8 @@ export default function GlobalFooter() {
               </span>
             </Link>
             <p className="text-sm text-muted-foreground mb-4 max-w-xs">
-              The #1 free TikTok comment generator tool. Create viral, engaging comments 
-              instantly with AI. Used by 500K+ creators worldwide.
+              Free AI-powered TikTok comment generator tool. Create viral, engaging comments 
+              instantly. No sign-up required.
             </p>
             <div className="flex gap-3">
               {socialLinks.map((social) => (
@@ -138,12 +138,21 @@ export default function GlobalFooter() {
             <ul className="space-y-2">
               {footerLinks.company.links.map((link) => (
                 <li key={link.name}>
-                  <Link 
-                    href={link.href}
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    {link.name}
-                  </Link>
+                  {link.name === "Contact" ? (
+                    <a 
+                      href="mailto:support@tiktokcommentgenerators.com"
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      {link.name}
+                    </a>
+                  ) : (
+                    <Link 
+                      href={link.href}
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      {link.name}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
@@ -189,6 +198,19 @@ export default function GlobalFooter() {
           </div>
         </div>
 
+        {/* Support Contact */}
+        <div className="border-t pt-6 mb-6">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-sm">
+            <div className="flex items-center gap-2">
+              <Mail className="w-4 h-4 text-muted-foreground" />
+              <span className="text-muted-foreground">Customer Support:</span>
+              <a href="mailto:support@tiktokcommentgenerators.com" className="text-primary hover:underline">
+                support@tiktokcommentgenerators.com
+              </a>
+            </div>
+          </div>
+        </div>
+
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
           <div>
@@ -205,10 +227,10 @@ export default function GlobalFooter() {
         {/* SEO Text */}
         <div className="mt-8 pt-8 border-t">
           <p className="text-xs text-muted-foreground text-center">
-            TikTok Comment Generator is the leading free tool for creating viral TikTok comments. 
+            TikTok Comment Generator is a free tool for creating viral TikTok comments. 
             Our AI-powered comment generator helps content creators, social media managers, and TikTok enthusiasts 
             generate engaging comments instantly. With support for multiple languages and comment styles, 
-            our TikTok comment generator is trusted by over 500,000 users worldwide.
+            our TikTok comment generator provides authentic and creative comment suggestions.
           </p>
         </div>
       </div>
